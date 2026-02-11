@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        #mainTitle {
+            color: pink;
+            text-align: center;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+
+        	h2, h3 {
+            color: blue;
+        }
+
+         {
+            font-family: Arial;
+        }
+
+		div p {
+            font-style: italic;
+        }
+
+                ul > li {
+            color: brown;
+        }
+
+                h2 + p {
+            color: purple;
+        }
+
+                h3 ~ p {
+            background-color: lightgray;
+        }
+
+                a:hover {
+            color: red;
+            font-weight: bold;
+        }
+
+        	p::first-letter {
+            font-size: 24px;
+            color: darkorange;
+        }
+
+               input[type="text"] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">CSS Selector Forms</h1>
+
+    <h2>Simple Selectors</h2>
+    <p class="highlight">This is a paragraph using class selector.</p>
+
+    <h3>Group Selector Example</h3>
+    <p>This paragraph shows element selector.</p>
+
+    <div>
+        <p>This paragraph is inside a descendant selector.</p>
+    </div>
+
+    <h2>Combinatory Selectors</h2>
+    <p>This paragraph is adjacent to h2.</p>
+
+    <h3>General Sibling</h3>
+    <p>Sibling paragraph 1</p>
+    <p>Sibling paragraph 2</p>
+
+    <ul>
+        <li>Child selector 1</li>
+        <li>Child selector 2</li>
+    </ul>
+
+    <h2>Pseudo-class Selector</h2>
+    <a href="#">Place the cursor over this link</a>
+
+    <h2>Pseudo-element Selector</h2>
+    <p>This paragraph demonstrates pseudo-element selector.</p>
+
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+
+</body>
+</html>
